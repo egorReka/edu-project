@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1A1A1A;
+
+    margin: 0;
+
+    border: 1px double black; 
+}
+
+ul, li, p, h2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+h1 {
+    display: none;
+}
+
+.main-header {
+    max-width: 1920px;
+    margin: 0 160px;
+    margin-top: 29px;
+    display: flex;
+    align-items: center;
+
+    border: 1px solid black;
+}
+
+.header-logo {
+    width: 49px;
+    height: 47.69px;
+}
+
+.header-logo img {
+    display: block;
+}
+
+.main-nav {
+    width: 632px;
+    margin-left: 80px;
+}
+.main-nav-list {
+    display: flex;
+    gap: 70px;
+}
+.main-nav-item {
+}
+.icons {
+    width: 174.7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+
+    
+}
+.icon {
+}
+.page {
+}
+.hero-discount {
+}
+.block-novelties {
+}
+.block-title {
+}
+.card-product-list {
+}
+.card-product-item {
+}
+.block-promotions {
+}
+.promo-limited-time {
+}
+.block-bestsellers {
+}
+.best-sellers {
+}
+.block-joinus {
+}
+.joinus-img-list {
+}
+.joinus-img-item {
+}
+.social-list {
+}
+.social-item {
+}
+.brands {
+}
+.card-brands-list {
+}
+.card-brands-item {
+}
+.main-footer {
+}
+.footer-icons-list {
+}
+.footer-icon-item {
+}

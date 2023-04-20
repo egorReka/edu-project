@@ -2,11 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Shop</title>
 </head>
 <body>
     <header class="main-header">
-        <p>
+        <p class="header-logo">
             <img src="img/logo.svg" alt="Интернет магазин косметики">
         </p>
         <nav class="main-nav">
@@ -17,17 +18,33 @@
                 <li class="main-nav-item"><a href="#">Магазины</a></li>
                 <li class="main-nav-item"><a href="#">Акции</a></li>
             </ul>
-            <ul class="icons">
-                <li class="icon"><a href="#"><img src="img/icon-search.svg" alt="search"></a></li> <!-- заменить на input type="search"-->
-                <li class="icon"><a href="#"><img src="img/icon-login.svg" alt="login"></a></li> <!-- заменить на input type="button"-->
-                <li class="icon"><a href="#"><img src="img/icon-like.svg" alt="like"></a></li>
-                <li class="icon"><a href="#"><img src="img/icon-basket.svg" alt="basket"></a></li>
-            </ul>
         </nav>
+            <ul class="icons">
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/icon-search.svg" alt="search" width="16.5" height="19.07">
+                    </a>
+                </li> <!-- заменить на input type="search"-->
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/icon-login.svg" alt="login" width="17" height="18.5">
+                    </a>
+                </li> <!-- заменить на input type="button"-->
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/icon-like.svg" alt="like" width="20" height="17.65">
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="#">
+                        <img src="img/icon-basket.svg" alt="basket" width="16" height="18.46"> <!--Добавить счетчик-->
+                    </a>
+                </li>
+            </ul>
     </header>
     
     <main class="page">
-        <h1>Магазин косметики</h1> <!--Скрыть со станицы-->
+        <h1>Магазин косметики</h1> <!--h1 обязателен для страницы (Скрыть)-->
         <aside class="hero-discount">
             <h2>Скидки на средства для ухода за кожей</h2>
             <a href="#">перейти в каталог</a>
