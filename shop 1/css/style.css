@@ -7,11 +7,9 @@ body {
     color: #1A1A1A;
 
     margin: 0;
-
-    border: 1px double black; 
 }
 
-ul, li, p, h2 {
+ul, li, p {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -22,17 +20,29 @@ a {
     color: #1A1A1A;
 }
 
+img {
+    display: block;
+}
+
 h1 {
     display: none;
 }
 
+section h2 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+}
+
+/* ---------------- HEADER ------------------------*/
+
 .main-header {
-    max-width: 1920px;
     margin: 0 160px;
     margin-top: 29px;
+    margin-bottom: 91px;
     display: flex;
     align-items: center;
-
     border: 1px solid black;
 }
 
@@ -41,17 +51,14 @@ h1 {
     height: 47.69px;
 }
 
-.header-logo img {
-    display: block;
-}
-
 .main-nav {
-    width: 632px;
     margin-left: 80px;
+    border: 1px solid #000;
 }
 .main-nav-list {
     display: flex;
     gap: 70px;
+    
 }
 .main-nav-item {
 }
@@ -60,24 +67,90 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: auto;
-
-    
+    margin-left: auto;   
 }
 .icon {
 }
+/* __________________________________________________ */
+
+
+/*------------------- MAIN ---------------------------*/
+
 .page {
+    margin: 0 160px;
 }
+
 .hero-discount {
 }
+
+.hero-title {
+    width: 808px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 73px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.hero-discount a {
+    display: block;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.hero-discount img {
+    margin: 0 auto;
+    margin-bottom: 200px;
+} 
 .block-novelties {
 }
-.block-title {
+.block-novelties h2 {
+    margin-bottom: 70px;
 }
+
 .card-product-list {
+    display: flex;
 }
 .card-product-item {
+    height: 394px;
+    width: 302px;
+    border: 2px solid #EAEAEB;
+    border-right: 1px solid #EAEAEB;
 }
+
+.card-product-item:last-child {
+    border-right: 2px solid #EAEAEB;
+}
+
+.block-content-card {
+    margin: 0 auto;
+    width: 250px;
+    border: 1px solid #000;
+}
+
+.card-product-item img {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+/* .card-product-item img:nth-child(3) {
+    margin: 13px 9px 35px 30px;
+} */
+
+.card-product-item p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    /* text-align: center; */
+    margin-bottom: 10px;
+}
+
+
+
 .block-promotions {
 }
 .promo-limited-time {
