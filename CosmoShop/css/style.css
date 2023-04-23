@@ -7,11 +7,91 @@ body {
     line-height: 16px;
     display: grid;
     grid-template-columns: 311px 1055px;
+    text-transform: uppercase;
 }
 
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-header {
+    background-color: #151413;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    margin: 0;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+
+.logo img {
+    display: block;
+    width: 133px;
+    height: 42px;
+}
+
+.site-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+    border-bottom: 1px solid #FFFDFC;
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
 .site-navigation-item a {
     text-decoration: none;
     color: #FFFDFC;
+}
+
+.service-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 25px 0;
+    padding-left: 50px;
+    border-bottom: 1px solid #FFFDFC;
+}
+
+.service-navigation-item a {
+    text-decoration: none;
+    color: #FFFDFC;
+} 
+
+.social-list {
+    display: flex;
+    gap: 25px;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.container-promo {
+    padding-left: 52px;
+    padding-right: 103px;
+}
+
+.container-promo a {
+    position: relative;
+}
+
+.container-promo h2 {
+    width: 362px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}
+
+.breadcrumds-list {
+    margin-top: 44px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    gap: 25px;
 }
 
 .breadcrumds-list a {
@@ -22,3 +102,5 @@ body {
 .breadcrumds-list a.active {
     opacity: 0.6;
 }
+
+
