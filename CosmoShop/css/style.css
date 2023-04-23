@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    display: grid;
+    grid-template-columns: 311px 1055px;
+}
+
+.site-navigation-item a {
+    text-decoration: none;
+    color: #FFFDFC;
+}
+
+.breadcrumds-list a {
+    text-decoration: none;
+    color: #151413;
+}
+
+.breadcrumds-list a.active {
+    opacity: 0.6;
+}
