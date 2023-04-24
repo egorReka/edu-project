@@ -48,6 +48,14 @@ ul, li {
     color: #FFFDFC;
 }
 
+.site-navigation-item a.active {
+    text-decoration: underline;
+    text-decoration-color:#DC5B34;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    text-underline-position: under;
+}
+
 .service-navigation {
     display: flex;
     flex-direction: column;
@@ -75,15 +83,23 @@ ul, li {
     padding-right: 103px;
 }
 
-.container-promo a {
+.container-promo-content {
+    width: 900px;
+    height: 365px;
     position: relative;
+    border: 5px solid #000;
 }
 
 .container-promo h2 {
     width: 362px;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
     position: absolute;
-    top: 50%;
-    right: 50%;
+    top: 111px;
+    left: 269px;
+    background-color: #DC5B34;
 }
 
 .breadcrumds-list {
