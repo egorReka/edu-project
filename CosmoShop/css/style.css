@@ -83,23 +83,38 @@ ul, li {
     padding-right: 103px;
 }
 
-.container-promo-content {
+.container-content {
     width: 900px;
     height: 365px;
     position: relative;
-    border: 5px solid #000;
+    
 }
 
-.container-promo h2 {
-    width: 362px;
+.container-text {
     font-size: 32px;
     line-height: 48px;
-    text-align: center;
     text-transform: uppercase;
     position: absolute;
-    top: 111px;
-    left: 269px;
+    top: 116px;
+    left: 256px;
+}
+
+
+.container-text li {
+    width: 388px;
     background-color: #DC5B34;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.container-text li:first-child {
+    width: 264px;
+    position: relative;
+    left: 71px;
+}
+
+.container-text li:last-child {
+    margin: 0;
 }
 
 .breadcrumds-list {
@@ -107,16 +122,36 @@ ul, li {
     margin-bottom: 20px;
     display: flex;
     justify-content: start;
-    gap: 25px;
 }
 
 .breadcrumds-list a {
+    font-weight: 400;
     text-decoration: none;
     color: #151413;
+    margin-right: 11px;
 }
 
 .breadcrumds-list a.active {
     opacity: 0.6;
 }
 
+.breadcrumds-item::after {
+    /* content: ">"; */
+    
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+
+.breadcrumds-item:last-child::after {
+    content: "";
+    background-image: none;
+    margin: 0;
+}
 
