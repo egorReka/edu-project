@@ -124,12 +124,13 @@ ul, li {
     line-height: 48px;
     text-transform: uppercase;
     position: absolute;
-    top: 116px;
-    left: 256px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-
 .container-text li {
+    display: block;
     width: 388px;
     background-color: #DC5B34;
     margin-bottom: 7px;
@@ -139,9 +140,8 @@ ul, li {
 .container-text li:first-child {
     width: 264px;
     position: relative;
-    left: 71px;
+    transform: translateX(25%);
 }
-
 .container-text li:last-child {
     margin: 0;
 }
