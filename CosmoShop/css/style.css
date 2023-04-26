@@ -86,8 +86,6 @@ ul, li {
     color: #FFFDFC;
 } 
 
-
-
 .service-navigation-item a:hover {
     color: #acc8c9;
 }
@@ -112,27 +110,15 @@ ul, li {
     padding-right: 103px;
 }
 
+
 .container-content {
     width: 900px;
     height: 365px;
-    background-image: url(../img/photo.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    align-items: center;
-}
-
-.container-content-item {
-    margin: 0 auto;
-    font-size: 32px;
-    line-height: 48px;
-    text-transform: uppercase;
-}
-
-/* .container-content {
-    width: 900px;
-    height: 365px;
     position: relative;
+}
+
+.container-content a {
+    display: block;
     
 }
 
@@ -144,7 +130,7 @@ ul, li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+}
 
 .container-text li {
     display: block;
