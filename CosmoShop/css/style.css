@@ -56,6 +56,21 @@ ul, li {
     text-underline-position: under;
 }
 
+
+.site-navigation-item a:hover {
+    color: #acc8c9;
+}
+
+.site-navigation-item a:active {
+    text-decoration: underline;
+    text-decoration-color:#DC5B34;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    text-underline-position: under;
+}
+
+
+
 .service-navigation {
     display: flex;
     flex-direction: column;
@@ -70,6 +85,20 @@ ul, li {
     text-decoration: none;
     color: #FFFDFC;
 } 
+
+
+
+.service-navigation-item a:hover {
+    color: #acc8c9;
+}
+
+.service-navigation-item a:active {
+    text-decoration: underline;
+    text-decoration-color:#DC5B34;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    text-underline-position: under;
+}
 
 .social-list {
     display: flex;
