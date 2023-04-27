@@ -119,7 +119,6 @@ ul, li {
 
 .container-content a {
     display: block;
-    
 }
 
 .container-text {
@@ -130,7 +129,10 @@ ul, li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
+
+
 
 .container-text li {
     display: block;
