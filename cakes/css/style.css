@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 155px;
 }
 
 .main-nav {
@@ -73,53 +73,164 @@ body {
     display: flex;
 }
 
+.block-promo-content {
+    margin-bottom: 241px;
+}
+
 .promo-title {
+    margin: 0;
     font-size: 78px;
     line-height: 70px;
+    margin-bottom: 25px;
 }
 
 .promo p {
     font-style: italic;
     font-size: 40px;
     line-height: 53px;
+    margin: 0;
+    margin-bottom: 75px;
 }
 
 .promo img {
     display: block;
     width: 759px;
+    position: absolute;
+    top: 105px;
+    right: 0;
+    z-index: -1;
 }
 
 a.button {
     font-weight: 700;
     font-size: 13px;
+    line-height: 51px;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
-
+    display: inline-block;
+    text-align: center;
+    width: 226px;
+    height: 51px;
     background-color: #F50049;
-    ;
+    border-radius: 25.5px;
+    margin-bottom: 100px;
 }
 
 .features {
     font-size: 14px;
     line-height: 18px;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
+.nature {
+    width: 118px;
+    padding-left: 65px;
+    position: relative;
+}
+
+.nature::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 55px;
+    height: 55px;
+    background-image: url("../img/leaf.svg");
+    background-repeat: no-repeat;
+}
+
+.delivery {
+    width: 196px;
+    padding-left: 65px;
+    position: relative;
+}
+
+.delivery::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 55px;
+    height: 55px;
+    background-image: url("../img/delivery.svg");
+    background-repeat: no-repeat;
+}
+
+
 .page h2 {
+    margin: 0;
     font-size: 40px;
     line-height: 66px;
 }
 
+.cards {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 696px, 484px;
+
+}
+
+.cards li {
+    position: relative;
+    padding-left: 35px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    padding-right: 40px;
+    
+    border: 1px dashed #000;
+}
+
+
+.cards li:first-of-type {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 653px;
+}
+
+.cards li:not(:first-of-type) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 305px;
+}
+
 .cards h3 {
+    margin: 0;
+    padding: 0;
     font-size: 24px;
     line-height: 32px;
+
 }
+
+.cards p {
+    margin-bottom: 0;
+}
+
+.cards img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} 
 
 .cards a {
     font-size: 18px;
     line-height: 24px;
     color: #2D2829;
     text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .reviews h2 {
@@ -145,6 +256,8 @@ a.button {
     background-repeat: no-repeat;
     background-position: left center;
 } */
+
+
 
 .advantages h2 {
     text-align: center;
