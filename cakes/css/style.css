@@ -7,15 +7,15 @@ body {
     font-size: 20px;
     line-height: 27px;
     color: #2D2829;
-    
+    margin: 0;
     background-color: #FBEBEA;
 }
 
 .page-header {
-    width: 1366px;
-    padding-top: 60px;
-    padding-left: 74px;
-    padding-right: 74px;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0 74px;
+    padding-top: 60px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,9 +64,11 @@ body {
 }
 
 .page {
-    width: 1366px;
+    max-width: 1366px;
     padding-left: 74px;
     padding-right: 74px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .promo {
@@ -96,7 +98,7 @@ body {
     display: block;
     width: 759px;
     position: absolute;
-    top: 105px;
+    top: -130px;
     right: 0;
     z-index: -1;
 }
@@ -144,6 +146,7 @@ a.button {
     height: 55px;
     background-image: url("../img/leaf.svg");
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .delivery {
@@ -163,6 +166,7 @@ a.button {
     height: 55px;
     background-image: url("../img/delivery.svg");
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -172,95 +176,153 @@ a.button {
     line-height: 66px;
 }
 
-.cards {
+/* --------------------------- catalog -------------------------*/
+
+.catalog {
+    margin-bottom: 100px;
+}
+
+.catalog h2 {
+    margin-bottom: 55px;
+}
+
+.cards-list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: 696px, 484px;
-
+    grid-template-columns: 696px 484px;
+    row-gap: 43px;
+    column-gap: 38px;
 }
 
-.cards li {
-    position: relative;
-    padding-left: 35px;
-    padding-top: 30px;
-    padding-bottom: 35px;
-    padding-right: 40px;
-    
-    border: 1px dashed #000;
-}
-
-
-.cards li:first-of-type {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    height: 653px;
-}
-
-.cards li:not(:first-of-type) {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    height: 305px;
-}
-
-.cards h3 {
+.cards-list h3 {
     margin: 0;
     padding: 0;
     font-size: 24px;
     line-height: 32px;
-
 }
 
-.cards p {
-    margin-bottom: 0;
+.cards-list p {
+    margin: 0;
 }
 
-.cards img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-} 
-
-.cards a {
+.cards-list a {
     font-size: 18px;
     line-height: 24px;
     color: #2D2829;
     text-decoration: none;
+}
+
+.cards-item {
+    position: relative;
+}
+
+.cards-item.thin {
+    width: 484px;
+    height: 305px;
+    grid-column: 2 / 3;
+}
+
+.cards-item.wide {
+    width: 696px;
+    height: 653px;
+    grid-column: 1 / 2;
+    grid-row: span 2;
+}
+
+.cards-item h3 {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 30px;
+    left: 35px;
+}
+
+.cards-item p {
+    position: absolute;
+    top: 62px;
+    left: 35px;
+}
+}
+
+
+.cards-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.cards-item a {
+    position: absolute;
+    bottom: 39px;
+    right: 40px;
+}
+
+.cards-item a::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 12px;
+    margin-left: 15px;
+}
+
+/*----------------------------- reviews ------------------------*/
+.reviews {
+    margin-bottom: 115px;
 }
 
 .reviews h2 {
+    margin: 0;
+    margin-bottom: 50px;
     text-align: center;
 }
 
-.reviews h3 {
+.review {
+    width: 720px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    column-gap: 65px;
+}
+
+.review img {
+    margin-top: auto;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}
+
+.review h3 {
+    margin: 0;
     font-size: 27px;
     line-height: 36px;
 }
 
-.review-info {
-    font-size: 25px;
-    line-height: 33px;
+.review p {
+    margin: 0;
 }
 
-/* .review p {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
+p.info {
+    font-size: 25px;
+    line-height: 33px;
+    margin-bottom: 19px;
+}
 
-/* .advantages {
+/*------------------------------- advantages --------------------*/
+.advantages {
     background-image: url("../img/berries.png");
     background-repeat: no-repeat;
-    background-position: left center;
-} */
-
-
+    background-size: auto;
+    /* background-position: left bottom; */
+    margin-bottom: 279px;
+}
 
 .advantages h2 {
     text-align: center;
+    margin: 0;
+    margin-bottom: 25px;
 }
 
 .advantages-text {
@@ -268,8 +330,23 @@ a.button {
     font-size: 30px;
     line-height: 40px;
     text-align: center;
+    margin-bottom: 115px;
 }
 
+.advantages-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+.advantages-item  {
+    width: 423px;
+    margin-left: auto;
+    margin-right: 172px;
+}
+
+/*------------------------- contacts --------------------------*/
 .contact-item a {
     text-decoration: none;
     color: #2D2829;
