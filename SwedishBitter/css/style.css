@@ -1,0 +1,104 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFFFFF;
+  color: #303030;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+
+.site-navigation-item a {
+  color: #9A9A9A;
+  text-decoration: none;
+}
+
+.hero h1 {
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.quote p {
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.quote footer {
+  font-weight: 700;
+  text-align: center;
+}
+
+.fact-article h2 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 55px;
+  color: #A4C58C;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  text-underline-position: under;
+}
+
+.fact-article h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.fact-article p {
+  line-height: 30px;
+  color: #000000;
+}
+
+.symptoms h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.symptoms-item {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cta-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #7EB252;
+}
+
+.gallery h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.page-footer {
+  background-color: #F6F9F3;
+}
+
+.footer-link {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration-line: underline;
+  color: #9A9A9A;
+}
+
+.footer-navigation-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer-menu-item a {
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  color: #000000;
+}
+
